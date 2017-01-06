@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="apple-touch-icon"
+      href="images/icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<title>Welcome</title>
+    <script>    //Hides welcome bar then displays top bar
+        $(document).ready(function (){
+            $("#fade-out").delay(1500).fadeOut("slow");
+            $("#fade-in").fadeOut(0).delay(2500).fadeIn("slow");
+        });   
+    </script>
+</head>
+<body>
+    <div class="nav-bar hidden" id="fade-in"><h1><b>TommyTunes</b>.us</h1></div>
+    <div class="nav-bar" id="fade-out"><h1>Welcome to <b>TommyTunes</b>!</h1></div>
+    <div class="container">
+        <div class="image">
+            <picture>
+                <source media="(min-width: 650px)" srcset="images/title.png">
+                <source media="(min-width: 465px)" srcset="images/title-mobile.png">
+                <!-- img tag for browsers that do not support picture element -->
+                <img class="center" src="images/title-mobile.png" alt="guitar" id="image">
+            </picture>            
+        </div>
+        <footer id="footer">
+            <div class="menu">Portfolio:</div>
+            <div class="nav">
+                <a href="astrology/astrology.html">Astrology</a>&nbsp;
+                <a href="pancakes/pancakes.html">Pancakes</a>&nbsp;
+                <a href="basicForm/phpForm.html">PHP Form</a>
+                <a href="widgets/widgets.html">Widgets</a>
+                <a href="vr/index.html">VR</a>
+                <a href="vet/index.html">Vet</a>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>

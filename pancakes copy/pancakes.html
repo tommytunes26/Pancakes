@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pancakes</title>
+    <link rel="stylesheet" type="text/css" href="css/pancakes.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/js-cookie.js"></script>
+    <script src="js/pancakes.js"></script>
+    <script>
+        window.onload = function() {            
+            Cookies.set("animated", 1);            
+       }        
+    </script>
+</head>
+<body>
+    <div class="nav-mobile">
+        <div class="mobile-title">Pancake World</div>
+        <div class="nav-button">
+            <div class="nav-button-click" type="button"><a href="#" id="launch">Menu</a></div>
+        </div>
+        <div class="nav-mobile-menu collapsed" id="mobile-menu">
+            <ul class="hidden" id="mobile-menu-ul">
+                <li><a href="tour.html"><h2>Pancake Tour</h2></a></li>
+                <li><a href="syrup.html"><h2>Maple Syrup</h2></a></li>
+                <li><a href="../index.html"><h2>Back</h2></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-bar-back">
+    <div class="nav-bar">
+        <div class="plate">
+            <img src="pics/plate.png"/>
+        </div>        
+        <div class="pancake-spin" id="move">
+            <img  id="spinning" src="pics/pancake.png" />
+            <script>rotateAnimation("spinning",2);</script>
+        </div>
+        <div class="nav-content">
+            <h1>Pancake World</h1>
+        </div>
+        <div class="menu-tray" id="tray">            
+            <img src="pics/tray.png" />            
+        </div>
+        <div class="menu-sel hidden" id="menu">
+                <a href="tour.html"><h2>Pancake Tour</h2></a>
+                <a href="syrup.html"><h2 style="padding-left:5px;">Maple Syrup</h2></a>
+                <a href="../index.html"><h2 style="padding-left:40px;">Back</h2></a>
+        </div>
+        </div>
+    </div>
+    <div class="container">          
+        <div class="plates right">
+            <img src="pics/pancake-plate.png" />
+        </div>
+        <div class="plates">
+            <img src="pics/pancake-plate2.png" />
+        </div>        
+        <div class="plates right middle">
+            <img src="pics/pancake-plate4.png" />
+        </div>
+        <div class="plates middle">
+            <img src="pics/pancake-plate3.png" />
+        </div>        
+    </div>
+</body>    
+</html>

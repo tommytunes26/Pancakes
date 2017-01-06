@@ -1,0 +1,332 @@
+body {
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+	background: url("../pics/wallpaper.jpg") repeat left top;
+    z-index: -1;
+}
+
+.covered-back {
+	background: url("../pics/backPancakes.jpg") no-repeat left top fixed;
+    z-index: -1;
+}
+
+a, 
+a:visited,
+a:link,
+a:active {
+    text-decoration: inherit;
+    color: #572000;
+}
+
+a:hover {
+    color: #e2690e;
+}
+
+
+h1 {
+    font-family: forte, calibri;
+    font-size: 36pt;
+    color: #572000;
+    text-shadow: 2px 2px 5px #e2690e;    
+}
+
+h2 {    
+    font-size: 18pt;
+    text-shadow: 0px 0px 3px #e2690e;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: forte, calibri;
+    font-size: 38pt;
+    color: #efede6;
+    text-shadow: -2px 2px 10px #572000, -2px 2px 50px #e2690e;
+}
+
+/*Mobile -------------------------------------------*/
+
+@media screen and (max-width: 660px){
+    
+    .plates img {
+        width: 300px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    
+    a, 
+    a:visited,
+    a:link,
+    a:active {
+        color: #fff;
+    }    
+    a:hover {
+        color: #e2690e;
+    }
+    
+    .mobile-title {
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        font-family: forte, calibri;
+        font-size: 25pt;
+        color: #572000;
+        text-shadow: 2px 2px 5px #e2690e;         
+    }
+    
+    .plates img {
+        width: 200px;
+        
+    }
+    
+    .nav-mobile {
+        position: absolute;
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        min-width: 305px;
+        height: 60px;
+        background-color: #ebd389;    
+        box-shadow: 2px 2px 10px #572000;
+    }
+    
+    .nav-button {
+        display: block;
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+        margin-right: 5px;
+        background-image: url("../pics/plate-mobile.png");      
+    }  
+    
+    .nav-button-click {
+        display: block;
+        text-align: center;
+        font-family: forte, calibri;
+        font-size: 13pt;
+        color: #fff;
+        text-shadow: 0 0 5px #000;
+        margin-top: 14px;
+    }
+    
+    .nav-mobile-menu {
+        background-color: rgba(235, 211, 137, .9);
+        width: 100%;
+        margin-top: 60px;
+    }
+    
+    ul {
+        list-style: none;
+        text-align: right;
+        padding-right: 15px;
+        padding-bottom: 1px;
+        padding-top: 15px;
+    }
+    
+    .nav-bar, menu-sel, menu-tray {
+        display: none;
+    }
+    
+    .collapsed {
+        visibility: collapse;
+    }
+    
+    html {
+        overflow-x: hidden;
+    }
+    
+    .covered-back {
+	   width: 400px;
+    }
+    
+    
+}
+
+/*Classes-------------------------------------------*/
+
+
+.nav-bar-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color: #ebd389;    
+    box-shadow: 2px 2px 10px #572000;
+}
+
+.nav-bar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width:100%;
+    max-width: 1500px;
+    min-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 110px;
+    padding: 0;
+}
+
+.nav-content {
+    position: absolute;
+    width: 350px;
+    top: 0;
+    left: 120px;
+    margin-top: -8px;
+}
+
+.plate {
+    position: absolute;
+    padding: 5px;
+}
+
+.pancake-spin {
+    position: absolute;
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 90%;
+}
+
+.no-left {
+    left: 0;
+}
+
+.menu-tray {
+    position: absolute;
+    top: -200px;
+    left: 0; 
+    z-index: -2;
+}
+
+.menu-tray-down {
+    top: -20px;
+}
+
+.menu-sel {
+    position: absolute;
+    top: 120px;
+    left: 29px;
+}
+
+.container {    
+    width: 90%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.hidden {    
+    visibility: hidden;
+}
+
+.plates {
+    width: 610px;
+    padding: 0;
+    margin: 0;
+    z-index: -10;
+}
+
+.spaced {
+    padding-bottom: 30%;
+}
+
+.top {
+    margin-top: 150px;
+}
+
+.right {
+    top: 150px;
+    margin-left: 40%;
+}
+
+.center {
+    margin-left: 30px;
+}
+
+.middle {
+    top: 0px; 
+}
+
+.thin {
+    width: 610px;
+    float: left;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+.bio {
+    text-align: center;
+}
+
+.bio-left {
+    margin-top: 30%;
+    font-size: 20pt;
+    color: #fff;
+    text-shadow: 2px 1px 5px #000;
+}
+
+
+/*Placemat setup---------------------------------*/
+
+.placemat {
+    width: 850px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+}
+
+.fork {
+    float: left;
+    width: 120px;
+    height: 100%;
+}
+
+.knife {
+    float: left;
+    width: 120px;
+    height: 100%;
+}
+
+#fork {
+    position: fixed;
+    top: 20%;
+}
+
+#knife {
+    position: fixed;
+    top: 21%;
+}
+
+#plate1 {
+    scroll-snap-align: none start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

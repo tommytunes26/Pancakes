@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pancake Tour</title>
+    <link rel="stylesheet" type="text/css" href="css/pancakes.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/js-cookie.js"></script>
+    <script src="js/pancakes.js"></script>
+</head>
+<body>
+    <div class="nav-mobile">
+        <div class="mobile-title">Pancake World</div>
+        <div class="nav-button">
+            <div class="nav-button-click" type="button"><a href="#" id="launch">Menu</a></div>
+        </div>
+        <div class="nav-mobile-menu collapsed" id="mobile-menu">
+            <ul class="hidden" id="mobile-menu-ul">
+                <li><a href="syrup.html"><h2>Maple Syrup</h2></a></li>
+                <li><a href="pancakes.html"><h2>Home</h2></a></li>
+                <li><a href="index.html"><h2>Back</h2></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-bar-back">
+        <div class="nav-bar">
+            <div class="plate">
+                <img src="pics/plate.png"/>
+                <div class="nav-content">
+                    <h1>Pancake Tour</h1>
+                </div>
+            </div>
+            <div class="pancake-spin no-left">
+                <a href="pancakes.html">
+                    <img src="pics/pancake-back.png" onmouseover="this.src='pics/pancake-back-hover.png';" onmouseout="this.src='pics/pancake-back.png';" alt="back"/>
+                </a>
+            </div>
+        </div>   
+    </div>
+    <div class="placemat"> 
+        <div class="fork">
+            <img src="pics/fork.png" id="fork"/>
+        </div>        
+        <div class="container thin">
+            <div class="plates spaced">
+                <img src="pics/pancake-plate.png" id="plate1"/>
+                <div class="bio">
+                    <h3>Traditional pancakes</h3>
+                </div>
+            </div>
+            
+            <div class="plates spaced">
+                <img src="pics/pancake-plate2.png" id="plate2"/>
+                <div class="bio">
+                    <h3>Flaver Fav pancakes</h3>
+                </div>
+            </div>        
+            <div class="plates spaced">
+                <img src="pics/pancake-plate4.png" id="plate3"/>
+                <div class="bio">
+                    <h3>Plain pancakes</h3>
+                </div>
+            </div>
+            <div class="plates center spaced">
+                <img src="pics/pancake-plate3.png" id="plate4"/>
+                <div class="bio">
+                    <h3>Healthy-er pancakes</h3>
+                </div>
+            </div>          
+        </div> 
+        <div class="knife">
+            <img src="pics/knife.png" id="knife"/>
+        </div>
+    </div>
+</body>
+</html>
